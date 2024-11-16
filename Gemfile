@@ -63,3 +63,5 @@ group :test do
 end
 
 gem "redcarpet"
+
+gem "dartsass-rails", "~> 0.5.1"
