@@ -1,0 +1,15 @@
+<%= form_with model: @flashcard do |form| %>
+    <div>
+        <%= form.label :front %><br>
+        <%= form.text_field :front %>
+    </div>
+
+        <div>
+        <%= form.label :back %><br>
+        <%= form.text_field :back %>
+    </div>
+
+    <div>
+        <%= form.submit %>
+    </div>
+<% end %>
