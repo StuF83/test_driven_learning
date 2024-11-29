@@ -23,6 +23,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="with-sidebar">
+      <aside class="sidebar">
+        <%= render 'shared/sidebar' %>
+      </aside>
+      <main class="content">
+        <%= yield %>  
+      </main>
+    </div>
   </body>
 </html>
