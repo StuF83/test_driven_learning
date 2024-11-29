@@ -1,0 +1,62 @@
+form {
+    width: 65ch; /* Same width as the flashcard */
+    margin: 1rem auto; /* Center the form on the page */
+    padding: 1rem; /* Less padding for a more compact look */
+    background-color: #fff; /* Paper-like background */
+    border-radius: 12px; /* Rounded corners to match the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+    font-family: 'Georgia', serif; /* Match the flashcard font style */
+    display: flex;
+    flex-direction: column; /* Stack form fields vertically */
+    position: relative; /* Enable absolute positioning for child elements */
+    gap: 1rem; /* Less spacing between fields */
+
+    textarea {
+        width: 100%; /* Stretch to match form width */
+        height: 25ch; /* Compact height */
+        padding: 0.5rem; /* Less padding inside the textarea */
+        border: 1px solid #ccc; /* Subtle border for inputs */
+        border-radius: 8px; /* Rounded edges for inputs */
+        font-family: 'Georgia', serif;
+        font-size: 0.9rem; /* Slightly smaller font */
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Slight inner shadow for depth */
+        resize: vertical; /* Allow vertical resizing only */
+        background-color: #f9f9f9; /* Slightly lighter background for inputs */
+        transition: background-color 0.2s, box-shadow 0.2s;
+
+        &:focus {
+        background-color: #fff; /* Brighten on focus */
+        box-shadow: 0 0 0 2px #969696; /* Highlight the input */
+        outline: none; /* Remove default outline */
+        }
+
+        &::placeholder {
+        color: #888; /* Subtle color for the placeholder */
+        font-style: italic; /* Distinguish the placeholder text */
+        }
+    }
+
+    input[type="submit"] {
+        width: auto; /* Adjust width to fit content */
+        padding: 0.25rem 0.75rem; /* Compact padding for smaller button */
+        font-size: 0.8rem; /* Smaller font */
+        font-weight: bold;
+        color: #fff; /* White text */
+        background-color: #969696; /* Match hover effect of flashcard */
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        position: absolute; /* Position the button absolutely */
+        bottom: 0.5rem; /* Distance from the bottom of the form */
+        right: 0.5rem; /* Distance from the right of the form */
+
+        &:hover {
+        background-color: #7a7a7a; /* Darker shade on hover */
+        }
+
+        &:active {
+        background-color: #5a5a5a; /* Even darker on active state */
+        }
+    }
+}

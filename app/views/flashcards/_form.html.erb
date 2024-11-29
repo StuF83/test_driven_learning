@@ -1,12 +1,10 @@
 <%= form_with model: @flashcard do |form| %>
     <div>
-        <%= form.label :front %><br>
-        <%= form.text_field :front %>
+        <%= form.text_area :front, placeholder: "Front Content" %>
     </div>
 
         <div>
-        <%= form.label :back %><br>
-        <%= form.text_field :back %>
+        <%= form.text_area :back, placeholder: "Back Content" %>
     </div>
 
     <div>

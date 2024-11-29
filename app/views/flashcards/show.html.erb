@@ -1,5 +1,10 @@
 <h1>Flashcard Show</h1>
 
-<p><%= markdown(@flashcard.front) %></p>
-
-<p><%= @flashcard.back %></p>
+<div class="flashcard">
+    <div class="flashcard-front">
+        <p> <%= markdown(@flashcard.front) %> </p>
+    </div>
+    <div class="flashcard-back">
+        <p> <%= markdown(@flashcard.back) %> </p>
+    </div>
+</div>

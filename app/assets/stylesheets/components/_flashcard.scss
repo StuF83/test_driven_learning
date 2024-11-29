@@ -1,0 +1,48 @@
+// .flashcard {
+//     width: 65ch;
+//     height: 40ch;
+//     background-color: #fff; /* Paper-like background */
+//     border-radius: 12px; /* Rounded edges */
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Subtle shadow for lifting effect */
+//     padding: 1.5rem; /* Space inside the card */
+//     margin: 1rem auto; /* Center the card with some spacing */
+//     font-family: 'Georgia', serif; /* A nice serif font for a paper feel */
+//     transition: transform 0.2s, box-shadow 0.2s; /* Smooth interaction effects */
+// }
+
+
+
+.flashcard {
+    width: 65ch;
+    height: 40ch;
+    background-color: #fff; /* Paper-like background */
+    border-radius: 12px; /* Rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Subtle shadow for lifting effect */
+    margin: 1rem auto; /* Center the card with some spacing */
+    font-family: 'Georgia', serif; /* A nice serif font for a paper feel */
+    display: flex;
+    flex-direction: column; /* Stack the front and back vertically */
+    position: relative;
+    overflow: hidden; /* Ensure no overflow from inner content */
+    transition: background-color 0.2s; /* Smooth transition for background color */
+}
+
+.flashcard:hover {
+    background-color: #f7f7f7; /* Slightly darker shade of white */
+}
+
+.flashcard-front,
+.flashcard-back {
+    flex: 1; /* Divide the card equally */
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+}
+
+.flashcard-front {
+    border-bottom: 2px solid #ccc; /* A line marking the halfway point */
+}
